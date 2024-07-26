@@ -19,7 +19,6 @@ def get_new_user_token(): #This function create a new token and atach it to the 
 def post_new_client_kit(auth_token, kit_body): #Return the token giving authorization to the new user to create a Kit
     headers = data.headers.copy()
     headers["Authorization"] = f"Bearer {auth_token}"
-    response_new_client = requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
+    return requests.post(configuration.URL_SERVICE + configuration.KITS_PATH,
                                         json=kit_body,
                                         headers=headers)
-    return response_new_client
