@@ -25,6 +25,11 @@ Objetivos:
 _________________________________________________
 ### Comandos y Rutas utilizadas.
 
+| Rutas del Proyecto                                                             |
+|--------------------------------------------------------------------------------|
+| Local:  pytest+ C:\Users\Najla\PycharmProjects\qa-project-Urban-Grocers-app-es |
+| GitHub: pytest+ https://github.com/najla1103/qa-project-Urban-Grocers-app-esF  |
+
 | Rutas de la API |
 |-----------------|
 | /api/v1/users/  |

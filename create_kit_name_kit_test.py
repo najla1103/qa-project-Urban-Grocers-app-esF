@@ -1,13 +1,11 @@
-import configuration
 import data
 import sender_stand_request
-import requests
 
 
 def positive_assert(kit_body):  #Assigns a positive response to the test
     auth_token_user = sender_stand_request.get_new_user_token()
     user_response_kit = sender_stand_request.post_new_client_kit(auth_token_user, kit_body)
-    assert user_response_kit["name"] == kit_body["name"]
+    assert user_response_kit.json()["name"] == kit_body["name"]
     assert user_response_kit.status_code == 201
 
 
